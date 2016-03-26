@@ -17,9 +17,11 @@ I just want to check out the book from my library! I don't care to know
 how you go about making it locally available!
 
 
-`# Example run
+```r
+# Example run
 
 required_packages <- c("lubridate", "ggplot2", "lme4")
 lapply(required_packages, FUN=checkout)
 
-# End example run`
+# End example run
+```
