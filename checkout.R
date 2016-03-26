@@ -8,5 +8,6 @@ checkout <- function(pkg)
   paste0(pkg, " loaded.")
 }
 
-required_packages <- c("lubridate", "ggplot2", "lme4")
-lapply(X = required_packages, FUN = checkout)
+# Not run
+# required_packages <- c("lubridate", "ggplot2", "lme4")
+# lapply(X = required_packages, FUN = checkout)
