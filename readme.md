@@ -9,11 +9,11 @@ Name of the function invokes checking a book out of a library in the same
 sense that the `library()` function requests a particular package (analogous
 to a book) from the local set of installed packages (the 'library').
 
-`checkout()` is agnostic to whether the package ('book') is available in the
+`grok()` is agnostic to whether the package ('book') is available in the
 local library. That is, the under the hood operation of installing a locally
 unavailable package is hidden from the user (interlibrary loan?).
 
-I just want to check out the book from my library! I don't care to know
+I just want to grok the package! I don't care to know
 how you go about making it locally available!
 
 
@@ -21,7 +21,7 @@ how you go about making it locally available!
 # Example run
 
 required_packages <- c("lubridate", "ggplot2", "lme4")
-lapply(required_packages, FUN=checkout)
+lapply(required_packages, FUN=grok)
 
 # End example run
 ```
